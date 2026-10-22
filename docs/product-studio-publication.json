@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "purpose": "product-studio-demo-publication",
-  "source_commit": "49cdd900c965468196009adafb2f49e25b67b3c9",
+  "source_commit": "e95d864d01b0d07a8f493f0a92e73d7656705614",
   "source_repository": "frank-vcorp/qualitra-product",
-  "published_at": "2026-10-22T18:19:59.495Z",
+  "published_at": "2026-10-22T18:26:26.759Z",
   "asset_paths": [
     "docs/index.html",
     "docs/style.css",
