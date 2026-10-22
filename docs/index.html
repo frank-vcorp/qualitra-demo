@@ -1,1 +1,40 @@
-<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Product Studio · Demo pendiente</title></head><body style="font:16px system-ui;max-width:700px;margin:5rem auto;padding:1rem"><h1>Prototipo en preparación</h1><p>Este sitio contiene exclusivamente demostraciones con datos ficticios. Todavía no se ha aprobado una demo.</p></body></html>
+<!doctype html>
+<html lang="es-MX">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0a2540">
+  <meta name="description" content="Prototipo navegable para validación de recorridos de producto. Datos ficticios.">
+  <title>Qualitra • Demo FL-001</title>
+  <link rel="stylesheet" href="./style.css">
+  <script src="./model.js" defer></script>
+  <script src="./app.js" defer></script>
+</head>
+<body>
+  <div class="shell">
+    <aside class="sidebar" aria-label="Navegación de la demo">
+      <div class="brand"><span class="brand-mark">S</span><div><strong id="brandName">Product Studio</strong><small>PROTOTIPO INTERACTIVO</small></div></div>
+      <div class="environment"><span class="env-dot"></span> Entorno de demostración <span class="env-id">FL-001</span></div>
+      <span class="group-caption">PANTALLAS</span>
+      <nav class="side-nav" id="views" aria-label="Pantallas del prototipo"></nav>
+      <span class="group-caption">CONFIGURACIÓN DE DEMO</span>
+      <label class="form-label" for="scenario">Escenario</label>
+      <select id="scenario"></select>
+      <label class="form-label" for="role">Actuar como</label>
+      <select id="role"></select>
+      <p class="side-note">Cambiar de rol solo simula las responsabilidades. No existe autenticación ni datos reales.</p>
+      <div class="sidebar-bottom"><button id="reset" class="btn btn-outline block" type="button">↺ Reiniciar escenario</button></div>
+    </aside>
+    <main class="main">
+      <header class="topbar"><div class="breadcrumb"><span>Qualitra</span><span class="breadcrumb-divider">/</span><strong id="breadcrumb">Mi trabajo</strong></div><span class="demo-pill">● DATOS FICTICIOS</span></header>
+      <section class="page">
+        <div class="heading-row"><div><div class="eyebrow" id="flowId">RECORRIDO FL-001</div><h1 id="heading">Mi trabajo</h1><p id="lead">Prototipo de validación funcional y visual.</p></div><div class="heading-actions"><span class="version-chip" id="version">v0.4.0</span></div></div>
+        <div id="content"></div>
+        <footer class="footnote">Demostración estática. No factura, no envía correos, no conecta servicios ni reemplaza controles de acceso reales. Cambios guardados solamente en este navegador.</footer>
+      </section>
+    </main>
+  </div>
+  <div id="dialog" class="modal-backdrop" hidden><div class="modal" role="dialog" aria-modal="true" aria-labelledby="dialogTitle"><h2 id="dialogTitle">Confirmar</h2><p id="dialogText"></p><div id="dialogFields" class="dialog-fields"></div><div class="modal-actions"><button class="btn btn-outline" id="dialogCancel" type="button">Cancelar</button><button class="btn btn-primary" id="dialogConfirm" type="button">Confirmar</button></div></div></div>
+  <div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+</body>
+</html>

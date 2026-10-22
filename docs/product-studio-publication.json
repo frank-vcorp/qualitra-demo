@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "purpose": "product-studio-demo-publication",
+  "source_commit": "49cdd900c965468196009adafb2f49e25b67b3c9",
+  "source_repository": "frank-vcorp/qualitra-product",
+  "published_at": "2026-10-22T18:19:59.495Z",
+  "asset_paths": [
+    "docs/index.html",
+    "docs/style.css",
+    "docs/app.js",
+    "docs/model.js",
+    "docs/.nojekyll"
+  ]
+}
